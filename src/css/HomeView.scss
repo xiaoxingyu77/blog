@@ -1,0 +1,73 @@
+.home {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    // 背景图片
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("@/assets/shouyebeijing.jpeg");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    // 动画详细 80s为动画执行一次(往返)的时间
+    animation: animatedBackground 80s linear infinite;
+  
+    @keyframes animatedBackground {
+      0% {
+        background-position: 0% 49%;
+      }
+  
+      50% {
+        background-position: 100% 49%;
+      }
+  
+      100% {
+        background-position: 0% 49%;
+      }
+    }
+  .centerBox {
+    z-index: 99999;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    border-radius: 30px;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .el-avatar--circle {
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: 80px;
+      }
+
+    .ahtuorName {
+      font-size: 31px;
+      margin-top: 15px;
+      letter-spacing: 10px;
+      font-weight: 550;
+    }
+
+    .divider {
+        background-color: rgb(23, 99, 73);
+        border-top-color:rgb(23, 99, 73);
+        width: 70% !important;
+        margin: 20px auto;
+    }
+
+    .btnBox {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+      .btnStyle {
+        font-size: 14px;
+        font-weight: 550;
+        background: rgb(255, 255, 255, 0.3);
+        color: #fff;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
