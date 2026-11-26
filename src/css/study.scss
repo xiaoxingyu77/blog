@@ -1,0 +1,173 @@
+.study {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 48px 24px 80px;
+  background: #f7f6f3;
+  color: #2c3e50;
+  text-align: left;
+  user-select: text;
+
+  * {
+    user-select: text;
+  }
+
+  a {
+    color: #176349;
+    text-decoration: none;
+  }
+}
+
+.study-wrap {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.study-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.study-heading {
+  font-size: 32px;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+
+.study-lead {
+  margin-top: 12px;
+  color: #5c6b73;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.study-list {
+  margin-top: 36px;
+}
+
+.study-card {
+  display: block;
+  margin-bottom: 16px;
+  padding: 22px 24px;
+  border: 1px solid #e4e0d8;
+  border-radius: 16px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    border-color: #176349;
+  }
+}
+
+.study-card-title {
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 1.4;
+}
+
+.study-card-meta,
+.study-meta {
+  margin-top: 10px;
+  color: #7a868c;
+  font-size: 13px;
+}
+
+.study-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.study-tag {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(23, 99, 73, 0.1);
+  color: #176349;
+  font-size: 12px;
+}
+
+.study-card-summary {
+  margin-top: 12px;
+  color: #3d4c54;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.study-title {
+  font-size: 30px;
+  font-weight: 550;
+  line-height: 1.35;
+}
+
+.study-article {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 1.8;
+
+  h2 {
+    margin: 32px 0 12px;
+    font-size: 22px;
+    font-weight: 550;
+  }
+
+  p {
+    margin: 12px 0;
+  }
+
+  ul,
+  ol {
+    margin: 12px 0;
+    padding-left: 1.4em;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+
+  code {
+    padding: 0 4px;
+    border-radius: 4px;
+    background: #efece6;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.92em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 16px 0;
+    border-radius: 12px;
+  }
+
+  pre {
+    margin: 16px 0;
+    padding: 16px;
+    overflow-x: auto;
+    border-radius: 12px;
+    background: #1f2a2e;
+    color: #f4f1ea;
+
+    code {
+      padding: 0;
+      background: transparent;
+      color: inherit;
+    }
+  }
+}
+
+.study-empty {
+  margin-top: 48px;
+  color: #5c6b73;
+}

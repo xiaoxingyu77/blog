@@ -1970,6 +1970,7 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-plugin-vue: "npm:^9.23.0"
     jsdom: "npm:^24.1.0"
+    marked: "npm:^18.3.0"
     npm-run-all2: "npm:^6.2.0"
     pinia: "npm:^2.1.7"
     prettier: "npm:^3.2.5"
@@ -3641,6 +3642,15 @@ __metadata:
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.5.5"
   checksum: 10c0/299378e38f9a270069fc62358522ddfb44e94244baa0d6a8980ab2a9b2490a1d03b236b447eee309e17eb3bddfa482c61259d47960eb018a904f0ded52780c4a
+  languageName: node
+  linkType: hard
+
+"marked@npm:^18.3.0":
+  version: 18.3.0
+  resolution: "marked@npm:18.3.0"
+  bin:
+    marked: bin/marked.js
+  checksum: 10c0/397a926e5ae58b66e1daf0edecdf7d7408889b782d79117a51cf59f36c01870a7b8b9734ff8eb6466ea05022b3e8acc767b4ec9c9be593098ecc415e57145e24
   languageName: node
   linkType: hard
 
