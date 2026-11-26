@@ -81,3 +81,6 @@ Nameserver 生效后，域名已经由 Cloudflare 解析，但还没有指到 Pa
 **DNS**（Domain Name System，域名系统）负责把域名换成服务器地址。浏览器不能直接用 `kikivibes.blog` 找机器，它要先问 DNS：这个名字现在指向哪里。回答这个问题的服务器就是 Nameserver。域名买下来时，Namesilo 提供自己的 Nameserver；把它换成 Cloudflare 的两组之后，同样的问题改由 Cloudflare 回答，它再告诉浏览器去访问 Pages 上的站点。只修改其中一组时，不同地区的查询可能得到不同结果，所以两组都要替换，并等待公共 DNS 完成更新。
 
 **CDN**（Content Delivery Network，内容分发网络）把网站的静态文件复制到多个地点，让访客从较近的节点获取页面，而不是每次都访问存放源文件的那一台服务器。这个博客构建后的 HTML、JavaScript、CSS 和图片都是静态文件。域名交给 Cloudflare 之后，访客的请求先进入 Cloudflare 的节点，节点再向 Pages 取回页面，并可以缓存这些文件。因此 Cloudflare 在这里同时做两件事：用 DNS 说明 `kikivibes.blog` 该找谁，用 CDN 就近返回已经构建好的页面。
+
+## 碎碎念
+本质上正规上线流程是购买域名、购买服务器、配置DNS（让域名和服务器有对应关系）、CDN（可用可不用，用于加速。）
