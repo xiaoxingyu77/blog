@@ -3,7 +3,7 @@
     <div class="centerBox">
       <!-- 头像 -->
       <el-avatar
-          src="https://gd-hbimg.huaban.com/25f769c5cb8b545204b2eacda04df7d9a1376be573443-72Wzff_fw658"
+          src="/icon.jpg"
           :size="150"
           class="picT"
         ></el-avatar>
